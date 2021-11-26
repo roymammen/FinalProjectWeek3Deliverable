@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input: Los Angeles CA Temperature Result for a given Month/Week & Air Quality parameters</title>
+</head>
+<body>
+    <form action="/predict_wk_tmp" method="POST">
+        <label>Population</label>
+        <input type="text" name="Population"><br>
+        <label>SO2_conc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(0-10) </label>
+        <input type="text" name="SO2_conc"><br>
+        <label>PM10_conc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(0-50) </label>
+        <input type="text" name="PM10_conc"><br>
+        <label>PM2_5_conc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (0-30) </label>
+        <input type="text" name="PM2_5_conc"><br>
+        <label>NO2_conc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (0-70) </label>
+        <input type="text" name="NO2_conc"><br>
+        <label>Month &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1-12) </label>
+        <input type="text" name="Month"><br>
+        <label>Week &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1-4)  </label>
+        <input type="text" name="Week"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
